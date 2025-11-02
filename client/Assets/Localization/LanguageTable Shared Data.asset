@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LanguageTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LanguageTable
+  m_TableCollectionNameGuidString: d950c7578cdce4d1f978ef2a9966ed92
+  m_Entries:
+  - m_Id: 112123576311808
+    m_Key: back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120285754810368
+    m_Key: CaiBang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1075491820789760
+    m_Key: cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118394517970944
+    m_Key: change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2861981722730496
+    m_Key: class_is_select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119809558700032
+    m_Key: ConLon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119256296448000
+    m_Key: create_character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6885990400
+    m_Key: download_resource
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120160810688512
+    m_Key: DuongMon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148411650138112
+    m_Key: earth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508155619434496
+    m_Key: error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147746605490176
+    m_Key: fire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2861880900050944
+    m_Key: gender_select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117803704115200
+    m_Key: go_word
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120537689874432
+    m_Key: HoaSon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118893950525440
+    m_Key: input_name_charater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116339682304000
+    m_Key: input_password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116145221787648
+    m_Key: input_user_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8976015024128
+    m_Key: login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362626843402240
+    m_Key: login_fails
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125453959421952
+    m_Key: metal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112310470303744
+    m_Key: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2861763765723136
+    m_Key: name_is_empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1075915986558976
+    m_Key: next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120452893630464
+    m_Key: NgaMy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120211138142208
+    m_Key: NguDoc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112626624356352
+    m_Key: Notification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114369412194304
+    m_Key: password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355066358784000
+    m_Key: password_is_empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115616433299456
+    m_Key: password1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116910619353088
+    m_Key: password2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57644327886848
+    m_Key: play_now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18140292426227712
+    m_Key: please_agree_policy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112458206273536
+    m_Key: policy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57345022353408
+    m_Key: register
+    m_Metadata:
+      m_Items: []
+  - m_Id: 510899038183424
+    m_Key: register_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118156147286016
+    m_Key: service
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514322068398080
+    m_Key: success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120337994866688
+    m_Key: ThienNhan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120070004006912
+    m_Key: ThienVuong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120119526154240
+    m_Key: ThieuLam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120398761943040
+    m_Key: ThuongVan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120491569307648
+    m_Key: ThuyYen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119978299744256
+    m_Key: TieuDao
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113546636550144
+    m_Key: user_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354987157741568
+    m_Key: username_is_empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119887702777856
+    m_Key: VoDang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148503249543168
+    m_Key: water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148356562149376
+    m_Key: wood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19995358749777920
+    m_Key: create_character_successfully
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 54112899922657304
+  references:
+    version: 2
+    RefIds:
+    - rid: 54112899922657304
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1666156365902

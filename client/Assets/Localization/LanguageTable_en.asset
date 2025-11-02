@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguageTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: d950c7578cdce4d1f978ef2a9966ed92, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6885990400
+    m_Localized: Download Resource, please wait...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8976015024128
+    m_Localized: Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57345022353408
+    m_Localized: Register
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57644327886848
+    m_Localized: Play Now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112123576311808
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112310470303744
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112458206273536
+    m_Localized: policy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 112626624356352
+    m_Localized: Notification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113546636550144
+    m_Localized: User Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 114369412194304
+    m_Localized: Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115616433299456
+    m_Localized: Pass word 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116145221787648
+    m_Localized: Input User Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116339682304000
+    m_Localized: Input Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116910619353088
+    m_Localized: Password 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 117803704115200
+    m_Localized: Go Word
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118156147286016
+    m_Localized: Service
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118394517970944
+    m_Localized: Change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118893950525440
+    m_Localized: Input Name Charater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119256296448000
+    m_Localized: Create Character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119809558700032
+    m_Localized: Con Lon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119887702777856
+    m_Localized: Vo Dang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119978299744256
+    m_Localized: Tieu Dao
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120070004006912
+    m_Localized: Thien Vuong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120119526154240
+    m_Localized: "Thi\xEAu Lam"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120160810688512
+    m_Localized: DuongMon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120211138142208
+    m_Localized: Ngu Doc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120285754810368
+    m_Localized: Cai Bang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120337994866688
+    m_Localized: Thien Nhan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120398761943040
+    m_Localized: Thuong Van
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120452893630464
+    m_Localized: Nga My
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120491569307648
+    m_Localized: Thuy Yen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120537689874432
+    m_Localized: Hoa Son
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125453959421952
+    m_Localized: "H\u1EC7 Kim: Nh\xE2n v\u1EADt nam, gia nh\u1EADp Thi\u1EBFu L\xE2m
+      (ch\xEDnh ph\xE1i) ho\u1EB7c Thi\xEAn V\u01B0\u01A1ng Bang (trung l\u1EADp).
+      Ngay th\u1EB3ng, trung tr\u1EF1c, ki\xEAn nh\u1EABn, gi\u1ECFi c\u1EADn chi\u1EBFn,
+      ch\xFA tr\u1ECDng tu luy\u1EC7n ngo\u1EA1i c\xF4ng, c\xF3 th\u1EC3 s\u1EED
+      d\u1EE5ng h\u1EA7u nh\u01B0 t\u1EA5t c\u1EA3 v\u0169 kh\xED.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147746605490176
+    m_Localized: "H\u1EC7 H\u1ECFa: Gia nh\u1EADp C\xE1i Bang (ch\xEDnh ph\xE1i)
+      ho\u1EB7c Thi\xEAn Nh\u1EABn (t\xE0 ph\xE1i). T\xEDnh t\xECnh ch\xEDnh tr\u1EF1c,
+      y\xEAu gh\xE9t ph\xE2n minh. C\xE1i Bang \u0110\u1EA3 C\u1EA9y B\u1ED5ng Ph\xE1p
+      v\xE0 Gi\xE1ng Long Th\u1EADp B\xE1t Ch\u01B0\u1EDFng ch\u1EC9 truy\u1EC1n
+      l\u1EA1i cho ng\u01B0\u1EDDi x\u1EE9ng \u0111\xE1ng, Thi\xEAn Nh\u1EABn ph\xEDa
+      t\xE2y v\u1EF1c...\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148356562149376
+    m_Localized: "H\u1EC7 M\u1ED9c: Gia nh\u1EADp \u0110\u01B0\u1EDDng M\xF4n (trung
+      l\u1EADp) ho\u1EB7c Ng\u0169 \u0110\u1ED9c Gi\xE1o (t\xE0 ph\xE1i). L\xE0 ng\u01B0\u1EDDi
+      lu\xF4n th\u1EADn tr\u1ECDng, g\u1EB7p chuy\u1EC7n kh\xF4ng l\xF9i b\u01B0\u1EDBc,
+      \xE1m kh\xED \u0110\u01B0\u1EDDng M\xF4n vang danh thi\xEAn h\u1EA1, t\xE0i
+      s\u1EED d\u1EE5ng ch\u1EA5t \u0111\u1ED9c c\u1EE7a Ng\u0169 \u0110\u1ED9c gi\xE1o
+      c\u0169ng l\xE0 v\xF4 \u0111\u1ECBch.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148411650138112
+    m_Localized: "H\u1EC7 Th\u1ED5: Gia nh\u1EADp V\xF5 \u0110ang (ch\xEDnh ph\xE1i)
+      ho\u1EB7c C\xF4n L\xF4n (trung l\u1EADp). C\xE1 t\xEDnh tr\u1ECBnh tr\u1ECDng
+      tao nh\xE3, \u0111\u1EC7 t\u1EED V\xF5 \u0110ang ti\xEAn phong \u0111\u1EA1o
+      c\u1ED1t, ch\xED tr\u1ECDng tu luy\u1EC7n n\u1ED9i c\xF4ng v\xE0 ki\u1EBFm
+      thu\u1EADt, ph\xE1i C\xF4n L\xF4n c\xF3 truy\u1EC1n th\u1ED1ng s\u1EED d\u1EE5ng
+      b\xF9a ch\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148503249543168
+    m_Localized: "H\u1EC7 Th\u1EE7y: Nam N\u1EEF \u0111\u1EC1u c\xF3 th\u1EC3 gia
+      nh\u1EADp ph\xE1i Hoa S\u01A1n (trung l\u1EADp). \u0110\u1EC7 t\u1EED Hoa S\u01A1n
+      tu t\xE2m l\xE0 tr\xEAn h\u1EBFt, c\xF9ng t\u1EAFt \u0111\u1ED9c thi\u1EC7n
+      k\u1EF3 th\xE2n, \u0111\u1EA1t t\u1EA5t kim t\u1EC3 thi\xEAn h\u1EA1. Nh\xE2n
+      v\u1EADt n\u1EEF, c\xF3 th\u1EC3 gia nh\u1EADp ph\xE1i Nga My (ch\xEDnh ph\xE1i)
+      ho\u1EB7c Th\xFAy Y\xEAn M\xF4n (trung l\u1EADp).\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354987157741568
+    m_Localized: "T\xEAn \u0111\u0103ng nh\u1EADp tr\u1ED1ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355066358784000
+    m_Localized: "M\u1EADt kh\u1EA9u tr\u1ED1ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 362626843402240
+    m_Localized: "\u0110\u0103ng nh\u1EADp kh\xF4ng th\xE0nh c\xF4ng."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508155619434496
+    m_Localized: "L\u1ED7i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 510899038183424
+    m_Localized: "T\u1EA1o t\xE0i kho\u1EA3n th\xE0nh c\xF4ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514322068398080
+    m_Localized: "Th\xE0nh c\xF4ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1075491820789760
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1075915986558976
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2861763765723136
+    m_Localized: "T\xEAn nh\xE2n v\u1EADt \u0111ang tr\u1ED1ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2861880900050944
+    m_Localized: "Ch\u01B0a ch\u1ECDn gi\u1EDBi t\xEDnh"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2861981722730496
+    m_Localized: "Ch\u01B0a ch\u1ECDn m\xF4n ph\xE1i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18140292426227712
+    m_Localized: Please agree policy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19995358749777920
+    m_Localized: Create character successfully
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

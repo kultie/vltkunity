@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 13fb86b4ae0c846fbbe15494f8f718ff
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - UVN La Xanh
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f080f800147884c3d8c042c0bba62cb6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins/Package.ini/runtimes/linux.meta
+guid: f8499616d544c6b449d50b849b12b9e2
+=======
+guid: d8723a6471cf01a47a916e9d4a2c81fe
+>>>>>>> feature/npc_res_parser:Assets/Scripts/Resource/mapping/settings.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

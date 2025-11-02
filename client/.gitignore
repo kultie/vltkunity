@@ -1,0 +1,8 @@
+Library
+Temp
+obj
+Logs
+.fake
+.vs
+*.csproj
+UserSettings

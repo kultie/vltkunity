@@ -1,0 +1,501 @@
+﻿
+namespace game.resource.settings.skill
+{
+    public struct Defination
+    {
+        public const int MAX_MISSLE_STATUS = 4;
+        public const int MaxMissleDir = 64;
+        public const int MISSLE_MIN_COLLISION_ZHEIGHT = 0;
+        public const int MISSLE_MAX_COLLISION_ZHEIGHT = 20;
+        public const int MAX_SKILLVEDATA_COUNT = 20;
+        public const int MAXSKILLLEVELSETTINGNUM = 20;
+        public const int MAX_MISSLE_DAMAGEATTRIB = 50;
+        public const int MAX_SKILL_STATE = 20;
+        public const int MAX_MELEE_WEAPON = 6;
+
+        public enum MisslesForm
+        {
+            SKILL_MF_Wall = 0,
+            SKILL_MF_Line,
+            SKILL_MF_Spread,	
+            SKILL_MF_Circle,
+            SKILL_MF_Random,
+            SKILL_MF_Zone,
+            SKILL_MF_AtTarget,
+            SKILL_MF_AtFirer,
+            SKILL_MF_COUNT,
+        }
+
+        public enum SKillStyle
+        {
+            SKILL_SS_Missles = 0,
+            SKILL_SS_Melee,
+            SKILL_SS_InitiativeNpcState,
+            SKILL_SS_PassivityNpcState,
+            SKILL_SS_CreateNpc,        
+            SKILL_SS_BuildPoison,      
+            SKILL_SS_AddPoison,        
+            SKILL_SS_GetObjDirectly,   
+            SKILL_SS_StrideObstacle,   
+            SKILL_SS_BodyToObject,     
+            SKILL_SS_Mining,           
+            SKILL_SS_RepairWeapon,     
+            SKILL_SS_Capture,          
+            SKILL_SS_Thief,            
+        }
+
+        public enum CLIENTACTION
+        {
+            cdo_fightstand,
+            cdo_stand,
+            cdo_stand1,
+            cdo_fightwalk,
+            cdo_walk,
+            cdo_fightrun,
+            cdo_run,
+            cdo_hurt,
+            cdo_death,
+            cdo_attack,
+            cdo_attack1,
+            cdo_magic,
+            cdo_sit,
+            cdo_jump,
+            cdo_none,
+            cdo_count,
+        }
+
+        public enum NPCATTRIB
+        {
+            attrib_mana,
+            attrib_stamina,
+            attrib_life,
+            attrib_maxmana,
+            attrib_maxstamina,
+            attrib_maxlife,
+        }
+
+        public enum MisslesGenerateStyle
+        {
+            SKILL_MGS_NULL = 0,
+            SKILL_MGS_SAMETIME,
+            SKILL_MGS_ORDER,
+            SKILL_MGS_RANDONORDER,
+            SKILL_MGS_RANDONSAME,
+            SKILL_MGS_CENTEREXTENDLINE,
+        }
+
+        public enum NPC_RELATION
+        {
+            relation_none = 1,
+            relation_self = 2,
+            relation_ally = 4,
+            relation_enemy = 8,
+            relation_dialog = 16,
+            relation_all = relation_none | relation_ally | relation_enemy | relation_self | relation_dialog,
+            relation_num,
+        }
+
+        public enum SkillLRInfo
+        {
+            BothSkill,        
+            leftOnlySkill,    
+            RightOnlySkill,   
+            NoneSkill,        
+        }
+
+        public enum MissleMoveKind
+        {
+            MISSLE_MMK_Stand,
+            MISSLE_MMK_Line,
+            MISSLE_MMK_Random,                
+            MISSLE_MMK_Circle,                
+            MISSLE_MMK_Helix,                 
+            MISSLE_MMK_Follow,                
+            MISSLE_MMK_Motion,                
+            MISSLE_MMK_Parabola,              
+            MISSLE_MMK_SingleLine,            
+            MISSLE_MMK_RollBack = 100,        
+            MISSLE_MMK_Toss,                  
+        }
+
+        public enum MissleFollowKind
+        {
+            MISSLE_MFK_None,                  
+            MISSLE_MFK_NPC,                   
+            MISSLE_MFK_Missle,                
+        }
+
+        public enum MissleStatus
+        {
+            MS_DoWait,
+            MS_DoFly,
+            MS_DoVanish,
+            MS_DoCollision,
+        }
+
+        public enum eSkillLauncherType
+        {
+            SKILL_SLT_Npc = 0,
+            SKILL_SLT_Obj,
+            SKILL_SLT_Missle,
+
+            SKILL_SLT_Position,
+        }
+
+        public enum eSkillParamType
+        {
+            SKILL_SPT_TargetIndex = -1,
+            SKILL_SPT_Direction = -2,
+        }
+
+        public enum MissileEvent
+        {
+            Missle_StartEvent = 1,
+            Missle_FlyEvent,
+            Missle_CollideEvent,
+            Missle_VanishEvent,
+        }
+
+        public enum Interupt
+        {
+            Interupt_None,
+            Interupt_EndNewMissleWhenMove,
+            Interupt_EndOldMissleLifeWhenMove,
+        }
+
+        public enum StateMagicType
+        {
+            STATE_MAGIC_HEAD = 0,
+            STATE_MAGIC_BODY,
+            STATE_MAGIC_FOOT,
+            STATE_MAGIC_TYPE_NUM,
+        }
+
+        //public enum MAGIC_ATTRIB
+        //{
+            
+        //    magic_skill_begin,
+        //    magic_skill_cost_v,                             
+        //    magic_skill_costtype_v,                         
+        //    magic_skill_mintimepercast_v,                   
+        //    magic_skill_misslenum_v,                        
+        //    magic_skill_misslesform_v,
+        //    magic_skill_param1_v,
+        //    magic_skill_param2_v,
+        //    magic_skill_attackradius,                        
+        //    magic_skill_mintimepercastonhorse_v,             
+        //    magic_skill_skillexp_v,                          
+        //    magic_skill_desc,                                
+        //    magic_skill_eventskilllevel,
+        //    magic_skill_end,
+            
+        //    magic_missle_begin,
+        //    magic_missle_movekind_v,                        
+        //    magic_missle_speed_v,                           
+        //    magic_missle_lifetime_v,                        
+        //    magic_missle_height_v,                          
+        //    magic_missle_damagerange_v,                     
+        //    magic_missle_radius_v,                          
+        //    magic_missle_missrate,                          
+        //    magic_missle_hitcount,                          
+                                                            
+                                                            
+        //    magic_missile_drag,
+        //    magic_missle_reserve4,
+        //    magic_missle_reserve5,
+        //    magic_missle_end,
+            
+        //    magic_item_begin,
+        //    magic_weapondamagemin_v,
+        //    magic_weapondamagemax_v,
+        //    magic_armordefense_v,
+        //    magic_durability_v,
+        //    magic_requirestr,
+        //    magic_requiredex,
+        //    magic_requirevit,
+        //    magic_requireeng,
+        //    magic_requirelevel,
+        //    magic_requireseries,
+        //    magic_requiresex,   
+        //    magic_requiremenpai,
+        //    magic_weapondamageenhance_p,
+        //    magic_armordefenseenhance_p,
+        //    magic_requirementreduce_p,
+        //    magic_indestructible_b,  
+        //    magic_item_nouser,       
+        //    magic_item_needskill,    
+        //    magic_item_needreborn,   
+        //    magic_item_needtongban,  
+        //    magic_item_needbangzhu,  
+        //    magic_item_needcity,     
+        //    magic_item_noseries,     
+        //    magic_item_reserve8,
+        //    magic_item_reserve9,
+        //    magic_item_reserve10,
+        //    magic_item_end,
+            
+        //    magic_damage_begin,
+        //    magic_attackrating_v,   
+        //    magic_attackrating_p,   
+        //    magic_ignoredefense_p,  
+        //    magic_physicsdamage_v,  
+        //    magic_colddamage_v,     
+        //    magic_firedamage_v,     
+        //    magic_lightingdamage_v, 
+        //    magic_poisondamage_v,   
+        //    magic_magicdamage_v,    
+        //    magic_physicsenhance_p, 
+        //    magic_steallife_p,      
+        //    magic_stealmana_p,
+        //    magic_stealstamina_p,
+        //    magic_knockback_p,          
+        //    magic_deadlystrike_p,       
+        //    magic_fatallystrike_p,      
+        //    magic_stun_p,               
+                                        
+                                        
+                                        
+                                        
+                                        
+        //    magic_xinphysicsdamage_v,   
+        //    magic_xinfiredamage_v,      
+        //    magic_xincolddamage_v,      
+        //    magic_xinlightingdamage_v,  
+        //    magic_xinpoisondamage_v,    
+        //    magic_xinphysicsdamage_p,   
+        //    magic_xincoldmagic_v,       
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+        //    magic_addzhuabu_v,      
+                                    
+        //    magic_autoattackskill,  
+        //    magic_seriesdamage_p,   
+                                    
+        //    magic_damage_end,
+            
+        //    magic_normal_begin,
+        //    magic_lifemax_v,         
+        //    magic_lifemax_p,         
+        //    magic_life_v,            
+        //    magic_lifereplenish_v,   
+        //    magic_manamax_v,
+        //    magic_manamax_p,
+        //    magic_mana_v,            
+        //    magic_manareplenish_v,   
+        //    magic_staminamax_v,
+        //    magic_staminamax_p,
+        //    magic_stamina_v,
+        //    magic_staminareplenish_v,
+        //    magic_strength_v,
+        //    magic_dexterity_v,
+        //    magic_vitality_v,           
+        //    magic_energy_v,
+        //    magic_poisonres_p,          
+        //    magic_fireres_p,            
+        //    magic_lightingres_p,        
+        //    magic_physicsres_p,         
+        //    magic_coldres_p,            
+        //    magic_freezetimereduce_p,   
+        //    magic_burntimereduce_p,     
+        //    magic_poisontimereduce_p,   
+        //    magic_poisondamagereduce_v, 
+        //    magic_stuntimereduce_p,     
+        //    magic_fastwalkrun_p,        
+        //    magic_visionradius_p,
+        //    magic_fasthitrecover_v,     
+        //    magic_allres_p,             
+        //    magic_attackspeed_v,        
+        //    magic_castspeed_v,          
+        //    magic_meleedamagereturn_v,
+        //    magic_meleedamagereturn_p,  
+        //    magic_rangedamagereturn_v,
+        //    magic_rangedamagereturn_p,
+        //    magic_addphysicsdamage_v,     
+        //    magic_addfiredamage_v,        
+        //    magic_addcolddamage_v,        
+        //    magic_addlightingdamage_v,    
+        //    magic_addpoisondamage_v,      
+        //    magic_addphysicsdamage_p,     
+        //    magic_slowmissle_b,           
+        //    magic_changecamp_b,           
+        //    magic_physicsarmor_v,         
+        //    magic_coldarmor_v,
+        //    magic_firearmor_v,
+        //    magic_poisonarmor_v,
+        //    magic_lightingarmor_v,
+        //    magic_damagetomana_p,          
+        //    magic_lucky_v,                 
+        //    magic_steallifeenhance_p,      
+        //    magic_stealmanaenhance_p,      
+        //    magic_stealstaminaenhance_p,   
+        //    magic_allskill_v,              
+        //    magic_metalskill_v,            
+        //    magic_woodskill_v,             
+        //    magic_waterskill_v,            
+        //    magic_fireskill_v,             
+        //    magic_earthskill_v,            
+        //    magic_knockbackenhance_p,      
+        //    magic_deadlystrikeenhance_p,   
+        //    magic_stunenhance_p,           
+        //    magic_badstatustimereduce_v,   
+        //    magic_manashield_p,            
+        //    magic_adddefense_v,
+        //    magic_adddefense_p,
+        //    magic_fatallystrikeenhance_p,  
+        //    magic_lifepotion_v,            
+        //    magic_manapotion_v,            
+        //    magic_physicsresmax_p,         
+        //    magic_coldresmax_p,
+        //    magic_fireresmax_p,
+        //    magic_lightingresmax_p,
+        //    magic_poisonresmax_p,
+        //    magic_allresmax_p,          
+        //    magic_coldenhance_p,        
+        //    magic_fireenhance_p,        
+        //    magic_lightingenhance_p,    
+        //    magic_poisonenhance_p,      
+        //    magic_magicenhance_p,
+        //    magic_attackratingenhance_v, 
+        //    magic_attackratingenhance_p, 
+        //    magic_addphysicsmagic_v,     
+        //    magic_addcoldmagic_v,        
+        //    magic_addfiremagic_v,        
+        //    magic_addlightingmagic_v,    
+        //    magic_addpoisonmagic_v,      
+        //    magic_fatallystrikeres_p,    
+        //    magic_addskilldamage1,       
+        //    magic_addskilldamage2,       
+        //    magic_expenhance_p,          
+        //    magic_addskilldamage3,
+        //    magic_addskilldamage4,
+        //    magic_addskilldamage5,
+        //    magic_addskilldamage6,
+        //    magic_dynamicmagicshield_v,             
+        //    magic_addstealfeatureskill,             
+        //    magic_lifereplenish_p,                  
+        //    magic_ignoreskill_p,                    
+        //    magic_poisondamagereturn_v,             
+        //    magic_poisondamagereturn_p,             
+        //    magic_returnskill_p,                    
+        //    magic_autoreplyskill,                   
+                                                    
+                                                    
+        //    magic_mintimepercastonhorse_v,  
+        //    magic_poison2decmana_p,         
+        //    magic_skill_appendskill,        
+        //    magic_hide,                     
+        //    magic_clearnegativestate,       
+        //    magic_returnres_p,              
+        //    magic_dec_percasttimehorse,     
+        //    magic_dec_percasttime,          
+        //    magic_enhance_autoSkill,        
+        //    magic_enhance_life_p,           
+        //    magic_enhance_life_v,           
+        //    magic_enhance_711_auto,         
+        //    magic_enhance_714_auto,         
+        //    magic_enhance_717_auto,         
+        //    magic_enhance_723_miss_p,       
+        //    magic_no,                       
+        //    magic_skill_collideevent,       
+        //    magic_skill_vanishedevent,      
+        //    magic_skill_startevent,         
+        //    magic_skill_flyevent,           
+        //    magic_block_rate,                          
+        //    magic_enhancehit_rate,                     
+        //    magic_anti_block_rate,                     
+        //    magic_anti_enhancehit_rate,                
+        //    magic_sorbdamage_p,                        
+        //    magic_anti_poisonres_p,                    
+        //    magic_anti_fireres_p,                      
+        //    magic_anti_lightingres_p,                  
+        //    magic_anti_physicsres_p,                   
+        //    magic_anti_coldres_p,                      
+        //    magic_not_add_pkvalue_p,                   
+        //    magic_add_boss_damage,                     
+        //    magic_five_elements_enhance_v,             
+        //    magic_five_elements_resist_v,              
+        //    magic_skill_enhance,                       
+        //    magic_anti_allres_p,                       
+        //    magic_add_alldamage_p,                     
+        //    magic_auto_Revive_rate,                    
+        //    magic_addphysicsmagic_p,                   
+        //    magic_addcreatnpc_v,                       
+        //    magic_reduceskillcd1,                      
+        //    magic_reduceskillcd2,                      
+        //    magic_reduceskillcd3,                      
+        //    magic_clearallcd,                          
+        //    magic_addblockrate,                        
+        //    magic_walkrunshadow,                       
+        //    magic_returnskill2enemy,                   
+        //    magic_manatoskill_enhance,                 
+        //    magic_add_alldamage_v,                     
+        //    magic_addskilldamage7,                     
+        //    magic_ignoreattacrating_v,                 
+        //    magic_alljihuo_v,                          
+        //    magic_addexp_v,                            
+        //    magic_doscript_v,                          
+                                                       
+        //    magic_me2metaldamage_p,                    
+        //    magic_metal2medamage_p,                    
+        //    magic_me2wooddamage_p,                     
+        //    magic_wood2medamage_p,                     
+        //    magic_me2waterdamage_p,                    
+        //    magic_water2medamage_p,                    
+        //    magic_me2firedamage_p,                     
+        //    magic_fire2medamage_p,                     
+        //    magic_me2earthdamage_p,                    
+        //    magic_earth2medamage_p,                    
+        //    magic_manareplenish_p,                     
+        //    magic_fasthitrecover_p,                    
+        //    magic_stuntrank_p,                         
+        //    magic_sorbdamage_v,                        
+        //    magic_creatstatus_v,
+        //    magic_randmove,                             
+        //    magic_addbaopoisondmax_p,                   
+        //    magic_dupotion_v,                           
+        //    magic_npcallattackSpeed_v,                  
+        //    magic_eqaddskill_v,                         
+        //    magic_autodeathskill,
+        //    magic_autorescueskill,                      
+        //    magic_staticmagicshield_p,                  
+        //    magic_ignorenegativestate_p,                
+        //    magic_poisonres_yan_p,                      
+        //    magic_fireres_yan_p,                        
+        //    magic_lightingres_yan_p,                    
+        //    magic_physicsres_yan_p,                     
+        //    magic_coldres_yan_p,                        
+        //    magic_lifemax_yan_v,                        
+        //    magic_lifemax_yan_p,                        
+        //    magic_manamax_yan_v,                        
+        //    magic_manamax_yan_p,                        
+        //    magic_sorbdamage_yan_p,                     
+        //    magic_fastwalkrun_yan_p,                    
+        //    magic_attackspeed_yan_v,                    
+        //    magic_castspeed_yan_v,                      
+        //    magic_allres_yan_p,                         
+        //    magic_fasthitrecover_yan_v,                 
+        //    magic_anti_physicsres_yan_p,                
+        //    magic_anti_poisonres_yan_p,                 
+        //    magic_anti_coldres_yan_p,                   
+        //    magic_anti_fireres_yan_p,                   
+        //    magic_anti_lightingres_yan_p,               
+        //    magic_anti_allres_yan_p,                    
+        //    magic_anti_sorbdamage_yan_p,                
+        //    magic_anti_hitrecover,                      
+        //    magic_do_hurt_p,                            
+        //    magic_skill_showevent,                      
+        //    magic_addskillexp1,
+        //    magic_anti_poisontimereduce_p,              
+        //    magic_anti_stuntimereduce_p,                
+        //    magic_addskilldamage8,
+        //    magic_addskilldamage9,
+        //    magic_addskilldamage10,
+        //    magic_normal_end,
+        //}
+    }
+}

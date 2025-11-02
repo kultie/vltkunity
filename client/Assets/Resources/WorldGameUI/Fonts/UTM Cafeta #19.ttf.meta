@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6c045cd5fbc0441fcbab5a1579d2a7c4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - UTM Cafeta
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b989e7e6f72f74e12b712245e34ed48b, type: 3}
+  - {fileID: 12800000, guid: e50b0879a8851461e8ab2ac2ee380fe2, type: 3}
+  - {fileID: 12800000, guid: c3a348a86b8f94ce489fe5c6bdb8a050, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

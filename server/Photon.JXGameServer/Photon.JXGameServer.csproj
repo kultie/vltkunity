@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{889BEFC8-4AA4-4561-9CA0-7F6550AD0ACA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Photon.JXGameServer</RootNamespace>
+    <AssemblyName>Photon.JXGameServer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>..\..\deploy\bin_Win32\PhotonSocketServer.exe</StartProgram>
+    <StartArguments>/debug MmoDemo /config PhotonServer.MmoDemo-Development.config</StartArguments>
+    <StartWorkingDirectory>..\..</StartWorkingDirectory>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExitGames.Logging.Log4Net, Version=0.9.6.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\PhotonServer\Libs\ExitGames.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ExitGamesLibs">
+      <HintPath>D:\PhotonServer\Libs\ExitGamesLibs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.1, Culture=neutral, PublicKeyToken=2bb32138a3ceff71, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\PhotonServer\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Photon.SocketServer, Version=2.3.0.0, Culture=neutral, PublicKeyToken=48c2fa3b6988090e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\PhotonServer\Libs\Photon.SocketServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D, Version=4.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\PhotonServer\Libs\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonHostRuntimeInterfaces, Version=3.0.0.0, Culture=neutral, PublicKeyToken=6cb1467adaa73020, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\PhotonServer\Libs\PhotonHostRuntimeInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientPeer.cs" />
+    <Compile Include="Common\Global.cs" />
+    <Compile Include="Items\ItemObj.cs" />
+    <Compile Include="Entitys\CharacterObj.cs" />
+    <Compile Include="Entitys\MapObj.cs" />
+    <Compile Include="Entitys\MissionObj.cs" />
+    <Compile Include="Entitys\NpcAI.cs" />
+    <Compile Include="Entitys\NpcGold.cs" />
+    <Compile Include="Entitys\NpcObj.cs" />
+    <Compile Include="Entitys\ObjectObj.cs" />
+    <Compile Include="Entitys\PlayerObj.cs" />
+    <Compile Include="Maps\RegionObj.cs" />
+    <Compile Include="Maps\SceneObj.cs" />
+    <Compile Include="Scripts\LuaObj.cs" />
+    <Compile Include="Items\KItemDropRate.cs" />
+    <Compile Include="ServerPeer.cs" />
+    <Compile Include="Skills\KNpcAttribModify.cs" />
+    <Compile Include="Skills\MissleObj.cs" />
+    <Compile Include="Skills\MissleTemplate.cs" />
+    <Compile Include="Skills\NpcDeathCalcExp.cs" />
+    <Compile Include="Skills\SkillObj.cs" />
+    <Compile Include="Skills\SkillTemplate.cs" />
+    <Compile Include="Entitys\TeamObj.cs" />
+    <Compile Include="Helpers\NpcTemplate.cs" />
+    <Compile Include="Helpers\_KGridData.cs" />
+    <Compile Include="Scripts\LuaEntity.cs" />
+    <Compile Include="Items\BasePropTbl.cs" />
+    <Compile Include="Helpers\NpcFindPath.cs" />
+    <Compile Include="Helpers\JXHelper.cs" />
+    <Compile Include="Items\ItemModule.cs" />
+    <Compile Include="Modulers\PlayerModule.cs" />
+    <Compile Include="Modulers\SceneModule.cs" />
+    <Compile Include="Modulers\ScriptModule.cs" />
+    <Compile Include="Skills\SkillList.cs" />
+    <Compile Include="Skills\SkillModule.cs" />
+    <Compile Include="PhotonApp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skills\TOrdinSkillParam.cs" />
+    <Compile Include="TypeSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JX.Database\JX.Database.csproj">
+      <Project>{550f7c72-3e3e-4e55-b8cb-ccdd1e5e7a09}</Project>
+      <Name>JX.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Photon.ShareLibrary\Photon.ShareLibrary.csproj">
+      <Project>{1ddb6b23-41f0-4c63-b945-0c7d3f902d1c}</Project>
+      <Name>Photon.ShareLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
